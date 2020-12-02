@@ -6,7 +6,7 @@ ds_file = "DS_questions.xlsx"
 wb = xlrd.open_workbook(ds_file)
 
 #number of sheets in the excel file
-sheetNums = wb.nsheets
+sheetNums = wb.nsheets   # can also be len(wb.sheet_names())
 print(sheetNums)
 
 #accessing the first sheet
